@@ -1,6 +1,6 @@
 {
   "name": "pos-printer-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESC/POS printer server with xml interpreter for nodejs",
   "main": "index.js",
   "scripts": {
@@ -35,7 +35,7 @@
     "husky": "^4.0.10"
   },
   "dependencies": {
-    "pos-printer": "^1.0.1",
+    "pos-printer": "^1.0.2",
     "xml-js": "^1.6.11"
   }
 }
