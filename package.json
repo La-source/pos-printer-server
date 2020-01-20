@@ -1,0 +1,41 @@
+{
+  "name": "pos-printer-server",
+  "version": "1.0.0",
+  "description": "ESC/POS printer server with xml interpreter for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "lint": "eslint **/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/La-source/pos-printer-server.git"
+  },
+  "keywords": [
+    "thermal printer",
+    "thermal",
+    "printer",
+    "printer esc",
+    "esc code",
+    "epson",
+    "star",
+    "pos printer server",
+    "xml"
+  ],
+  "author": "Philippe Bauwens <ph.bauwens@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.1.8",
+    "eslint": "^6.8.0",
+    "husky": "^4.0.10"
+  },
+  "dependencies": {
+    "pos-printer": "^1.0.1",
+    "xml-js": "^1.6.11"
+  }
+}
