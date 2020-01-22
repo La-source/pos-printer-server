@@ -4,6 +4,4 @@
 
 ## TODO list
 
-- table format
-- status on poweroff printer
-
+- user new fonctions from pos-printer on ready

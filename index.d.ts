@@ -4,7 +4,11 @@
 
 import {EventEmitter} from "events";
 import {Element} from "xml-js";
-import {Printer, Status, Printing} from "pos-printer";
+import {Printer, Status as StatusPrinter, Printing} from "pos-printer";
+
+export interface Status extends StatusPrinter{
+  notOpen: boolean;
+}
 
 /**
  * Server printer
@@ -21,6 +25,13 @@ export class Server extends EventEmitter {
    * @param listener
    */
   on(event: "status", listener: (value: Map<Printer, Status>) => any): this;
+
+  /**
+   * Event on printer ready. This is emit only one time per printer
+   * @param event
+   * @param listener
+   */
+  on(event: "ready", listener: (printer: Printer) => any): this;
 
   /**
    * Add printer
